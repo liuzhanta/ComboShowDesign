@@ -8,10 +8,10 @@ import android.widget.Button;
  * Author:Terry<br>
  * Date:2018/9/15 下午10:42
  */
-public class ComboCloseButtonExpression extends AbstractPositionExpression {
+public class ComboCloseButtonShow extends AbstractComboButtonShow {
 
 
-    public ComboCloseButtonExpression(Button button) {
+    public ComboCloseButtonShow(Button button) {
         super(button);
     }
 

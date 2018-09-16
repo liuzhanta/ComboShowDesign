@@ -8,12 +8,12 @@ import android.widget.Button;
  * Author:Terry<br>
  * Date:2018/9/15 下午10:42
  */
-public class ComboButtonLevelOneExpression extends AbstractPositionExpression {
-
-
-    public ComboButtonLevelOneExpression(Button button) {
+public class ComboButtonLevelThreeShow extends AbstractComboButtonShow {
+    public ComboButtonLevelThreeShow(Button button) {
         super(button);
     }
+
+
 
     @Override
     public Animator getAnimator(ComboButtonPositionContext context) {

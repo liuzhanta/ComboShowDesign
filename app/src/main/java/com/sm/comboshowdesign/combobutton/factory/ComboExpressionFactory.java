@@ -2,10 +2,10 @@ package com.sm.comboshowdesign.combobutton.factory;
 
 import android.widget.Button;
 
-import com.sm.comboshowdesign.combobutton.strategy.AbstractPositionExpression;
-import com.sm.comboshowdesign.combobutton.strategy.ComboButtonLevelOneExpression;
-import com.sm.comboshowdesign.combobutton.strategy.ComboButtonLevelThreeExpression;
-import com.sm.comboshowdesign.combobutton.strategy.ComboButtonLevelTwoExpression;
+import com.sm.comboshowdesign.combobutton.strategy.AbstractComboButtonShow;
+import com.sm.comboshowdesign.combobutton.strategy.ComboButtonLevelOneShow;
+import com.sm.comboshowdesign.combobutton.strategy.ComboButtonLevelThreeShow;
+import com.sm.comboshowdesign.combobutton.strategy.ComboButtonLevelTwoShow;
 import com.sm.comboshowdesign.combobutton.strategy.ComboButtonType;
 
 /**
@@ -15,14 +15,14 @@ import com.sm.comboshowdesign.combobutton.strategy.ComboButtonType;
  */
 public class ComboExpressionFactory {
 
-    public static AbstractPositionExpression createExpression(Button button, ComboButtonType type) {
+    public static AbstractComboButtonShow createExpression(Button button, ComboButtonType type) {
         switch (type) {
             case LEVEL_ONE:
-                return new ComboButtonLevelOneExpression(button);
+                return new ComboButtonLevelOneShow(button);
             case LEVEL_TWO:
-                return new ComboButtonLevelTwoExpression(button);
+                return new ComboButtonLevelTwoShow(button);
             case LEVEL_THREE:
-                return new ComboButtonLevelThreeExpression(button);
+                return new ComboButtonLevelThreeShow(button);
         }
         return null;
     }

@@ -16,18 +16,18 @@ public class ComboButtonPositionContext {
     public PositionType positionType;
     public Button button;
 
-    List<AbstractPositionExpression> list = new ArrayList<>();
+    List<AbstractComboButtonShow> list = new ArrayList<>();
 
     public void setPositionType(PositionType positionType) {
         this.positionType = positionType;
     }
 
-    public void add(AbstractPositionExpression strategy){
+    public void add(AbstractComboButtonShow strategy){
         list.add(strategy);
     }
     public List<Animator> getResult(){
         List<Animator> result = new ArrayList<>();
-        for (AbstractPositionExpression expression : list) {
+        for (AbstractComboButtonShow expression : list) {
             result.add(expression.getAnimator(this));
         }
         return result;

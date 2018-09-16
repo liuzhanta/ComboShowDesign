@@ -10,9 +10,9 @@ import com.sm.comboshowdesign.combobutton.factory.ComboButtonAnimatorFactory;
  * Author:Terry<br>
  * Date:2018/9/15 下午10:42
  */
-public class ComboButtonLevelTwoExpression extends AbstractPositionExpression {
+public class ComboButtonLevelTwoShow extends AbstractComboButtonShow {
 
-    public ComboButtonLevelTwoExpression(Button button) {
+    public ComboButtonLevelTwoShow(Button button) {
         super(button);
     }
 

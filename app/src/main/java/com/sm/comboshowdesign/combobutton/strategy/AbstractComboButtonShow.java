@@ -8,12 +8,12 @@ import android.widget.Button;
  * Author:Terry<br>
  * Date:2018/9/15 下午10:39
  */
-public abstract class AbstractPositionExpression {
+public abstract class AbstractComboButtonShow {
 
     protected Button button;
     protected TranslationValue.Point defaultPoint = new TranslationValue.Point();
 
-    public AbstractPositionExpression(Button button) {
+    public AbstractComboButtonShow(Button button) {
         this.button = button;
         defaultPoint = new TranslationValue.Point(button.getTranslationX(),button.getTranslationY());
     }
