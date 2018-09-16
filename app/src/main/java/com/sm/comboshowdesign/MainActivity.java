@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
 
     private List<Animator> getComobButtonAnimator() {
         ComboButtonPositionContext context = new ComboButtonPositionContext();
+        // TODO: 2018/9/16 combo 增加getType
         context.add(ComboExpressionFactory.createExpression(comboButton1, ComboButtonType.LEVEL_ONE));
         context.add(ComboExpressionFactory.createExpression(comboButton2, ComboButtonType.LEVEL_TWO));
         context.add(ComboExpressionFactory.createExpression(comboButton3, ComboButtonType.LEVEL_THREE));
